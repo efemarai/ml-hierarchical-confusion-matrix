@@ -11,16 +11,20 @@ export interface Condition {
     is: string,
 }
 
+export interface Events {
+    click?: Function
+}
+
 export type Measure = 'count'
-| 'precision'
-| 'recall'
-| 'accuracy'
-| 'countActual'
-| 'countObserved'
-| 'truePositives'
-| 'trueNegatives'
-| 'falsePositives'
-| 'falseNegatives';
+    | 'precision'
+    | 'recall'
+    | 'accuracy'
+    | 'countActual'
+    | 'countObserved'
+    | 'truePositives'
+    | 'trueNegatives'
+    | 'falsePositives'
+    | 'falseNegatives';
 
 export type Normalization = 'total' | 'row' | 'column';
 export type Encoding = 'size' | 'color';
@@ -36,6 +40,7 @@ export interface Defaults {
     encoding: Encoding;
     collapsed: Array<string>;
     measures: Array<Measure>;
+    events?: Events;
 }
 
 export const defaults: Defaults = {

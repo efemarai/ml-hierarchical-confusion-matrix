@@ -5,7 +5,7 @@ Copyright (C) 2022 Apple Inc. All Rights Reserved.
 -->
 
 <script>
-    import { currentCell } from './stores';
+    import { currentCell, spec } from './stores';
 
     export let x = 0;
     export let y = 0;
@@ -22,6 +22,12 @@ Copyright (C) 2022 Apple Inc. All Rights Reserved.
     function mouseout() {
         // eslint-disable-next-line
         $currentCell = null;
+    }
+
+    function handleClick() {
+        if ($spec.events?.click) {
+            $spec.events.click($currentCell);
+        }
     }
 </script>
 
@@ -45,6 +51,7 @@ Copyright (C) 2022 Apple Inc. All Rights Reserved.
     on:blur={mouseout}
     on:mouseover={mouseover}
     on:focus={mouseover}
+    on:click={handleClick}
     class="outline"
     {x}
     {y}

@@ -1649,7 +1649,7 @@ cwise-compiler@^1.0.0:
   dependencies:
     uniq "^1.0.0"
 
-"d3-array@2 - 3", "d3-array@2.10.0 - 3", d3-array@^3.1.1, d3-array@^3.2.2:
+"d3-array@2 - 3", "d3-array@2.10.0 - 3", d3-array@^3.2.2:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/d3-array/-/d3-array-3.2.2.tgz#f8ac4705c5b06914a7e0025bbf8d5f1513f6a86e"
   integrity sha512-yEEyEAbDrF8C6Ob2myOBLjwBLck1Z89jMGFee0oPsn95GqjerpaOA4ch+vc2l0FNFFwMD5N7OCSEN5eAlsUbgQ==
@@ -1700,10 +1700,17 @@ d3-scale@^4.0.2:
   dependencies:
     d3-time "1 - 3"
 
-"d3-time@1 - 3", "d3-time@2.1.1 - 3", d3-time@^3.0.0:
+"d3-time@1 - 3", "d3-time@2.1.1 - 3":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/d3-time/-/d3-time-3.0.0.tgz#65972cb98ae2d4954ef5c932e8704061335d4975"
   integrity sha512-zmV3lRnlaLI08y9IMRXSDshQb5Nj77smnfpnd2LrBa/2K281Jijactokeak14QacHs/kKq0AQ121nidNYlarbQ==
+  dependencies:
+    d3-array "2 - 3"
+
+d3-time@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/d3-time/-/d3-time-3.1.0.tgz#9310db56e992e3c0175e1ef385e545e48a9bb5c7"
+  integrity sha512-VqKjzBLejbSMT4IgbmVgDjpkYrNWUYJnbCGo874u7MMKIWsILRX+OpX/gTk8MqjpT1A/c6HY2dCA77ZN0lkQ2Q==
   dependencies:
     d3-array "2 - 3"
 
@@ -4598,30 +4605,30 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vega-scale@^7.1.1:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/vega-scale/-/vega-scale-7.2.0.tgz#9e298cc02ad340498cb56847436b19439911f0fc"
-  integrity sha512-QYltO/otrZHLrCGGf06Y99XtPtqWXITr6rw7rO9oL+l3d9o5RFl9sjHrVxiM7v+vGoZVWbBd5IPbFhPsXZ6+TA==
+vega-scale@^7.3.0:
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/vega-scale/-/vega-scale-7.3.0.tgz#02b83435a892c6d91a87ee7d3d350fac987f464b"
+  integrity sha512-pMOAI2h+e1z7lsqKG+gMfR6NKN2sTcyjZbdJwntooW0uFHwjLGjMSY7kSd3nSEquF0HQ8qF7zR6gs1eRwlGimw==
   dependencies:
-    d3-array "^3.1.1"
+    d3-array "^3.2.2"
     d3-interpolate "^3.0.1"
     d3-scale "^4.0.2"
-    vega-time "^2.1.0"
-    vega-util "^1.17.0"
+    vega-time "^2.1.1"
+    vega-util "^1.17.1"
 
-vega-time@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/vega-time/-/vega-time-2.1.0.tgz#acfbab88d7798b87ff63913b0dce2ca5eb0d46ca"
-  integrity sha512-Q9/l3S6Br1RPX5HZvyLD/cQ4K6K8DtpR09/1y7D66gxNorg2+HGzYZINH9nUvN3mxoXcBWg4cCUh3+JvmkDaEg==
+vega-time@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/vega-time/-/vega-time-2.1.1.tgz#0f1fb4e220dd5ed57401b58fb2293241f049ada0"
+  integrity sha512-z1qbgyX0Af2kQSGFbApwBbX2meenGvsoX8Nga8uyWN8VIbiySo/xqizz1KrP6NbB6R+x5egKmkjdnyNThPeEWA==
   dependencies:
-    d3-array "^3.1.1"
-    d3-time "^3.0.0"
-    vega-util "^1.15.2"
+    d3-array "^3.2.2"
+    d3-time "^3.1.0"
+    vega-util "^1.17.1"
 
-vega-util@^1.15.2, vega-util@^1.17.0:
-  version "1.17.0"
-  resolved "https://registry.yarnpkg.com/vega-util/-/vega-util-1.17.0.tgz#b72ae0baa97f943bf591f8f5bb27ceadf06834ac"
-  integrity sha512-HTaydZd9De3yf+8jH66zL4dXJ1d1p5OIFyoBzFiOli4IJbwkL1jrefCKz6AHDm1kYBzDJ0X4bN+CzZSCTvNk1w==
+vega-util@^1.17.1:
+  version "1.17.2"
+  resolved "https://registry.yarnpkg.com/vega-util/-/vega-util-1.17.2.tgz#f69aa09fd5d6110c19c4a0f0af9e35945b99987d"
+  integrity sha512-omNmGiZBdjm/jnHjZlywyYqafscDdHaELHx1q96n5UOz/FlO9JO99P4B3jZg391EFG8dqhWjQilSf2JH6F1mIw==
 
 vscode-json-languageservice@^4.1.6:
   version "4.2.1"
